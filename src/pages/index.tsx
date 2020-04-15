@@ -2,18 +2,23 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { IndexTestQuery } from "../../types/graphql-types";
+import Blog from "../templates/blog";
 
 interface Props {
   data: IndexTestQuery
 }
 
 const IndexPage: React.FC<Props> = ({ data }) => {
-  const node = data.allMarkdownRemark.edges[0].node;
+  console.log(data);
   return (
     <Layout>
-      <h1>{node.frontmatter.title}</h1>
-      <p>{node.frontmatter.description}</p>
-      <div dangerouslySetInnerHTML={{__html:node.html}}></div>
+      {
+        data.allMarkdownRemark.edges.map((edge) => {
+          return (
+            <Blog blogTitle={edge.node.frontmatter.title} description={edge.node.frontmatter.description} html={edge.node.html}></Blog>
+          )
+        })
+      }
     </Layout>
   )
 }
