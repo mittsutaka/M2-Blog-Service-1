@@ -1,8 +1,10 @@
 import * as React from 'react';
+import Header from "../components/header";
 
-const Layout = ({children}: any) => {
+const Layout: React.FC = ({ children }) => {
     return (
         <div>
+            <Header />
             {children}
         </div>
     )
