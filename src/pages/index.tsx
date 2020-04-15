@@ -1,15 +1,39 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import { IndexTestQuery } from "../../types/graphql-types";
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
-  </Layout>
-)
+interface Props {
+  data: IndexTestQuery
+}
 
-export default IndexPage
+const IndexPage: React.FC<Props> = ({ data }) => {
+  const node = data.allMarkdownRemark.edges[0].node;
+  return (
+    <Layout>
+      <h1>{node.frontmatter.title}</h1>
+      <p>{node.frontmatter.description}</p>
+      <div dangerouslySetInnerHTML={{__html:node.html}}></div>
+    </Layout>
+  )
+}
+
+export default IndexPage;
+
+export const query = graphql`
+query IndexTest{
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          description
+        }
+        html
+      }
+    }
+  }
+}
+`
