@@ -19,7 +19,9 @@ const linkCss = css({
 })
 
 const Latest = styled.div({
-  display:"flex"
+  display:"flex",
+  overflow:"auto",
+  paddingBottom:15
 })
 
 const IndexPage: React.FC<Props> = ({ data }) => {

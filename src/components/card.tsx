@@ -18,6 +18,7 @@ const Title = styled.div({
 
 const Image = styled.div({
     height: "calc(100% - 106px)",
+    marginTop:"auto",
     img: {
         maxHeight: "100%"
     }
