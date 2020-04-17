@@ -36,7 +36,7 @@ const Header = () => {
                 </Link>
             </SiteName>
             <SiteDescription>
-                ～（サイト作成中）30歳プログラマ歴2年の趣味サイト～
+                ～30歳プログラマ歴2年の趣味サイト～
             </SiteDescription>
         </Wrapper>
     )
