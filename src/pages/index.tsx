@@ -26,13 +26,16 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[1].node.childImageSharp?.fixed;
-            if (fixedData == null) {
-              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp?.fixed.originalName == "first.png");
-              fixedData = ed.node.childImageSharp.fixed;
-            }
+            let fixedData = data.logoFiles.edges[0].node.fixed;
             return (
-              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData} />
+              <Card
+                key={index}
+                blogTitle={edge.node.frontmatter.title}
+                link={edge.node.fields.slug}
+                category={edge.node.frontmatter.category}
+                fixed={fixedData}
+                date={edge.node.frontmatter.date}
+              />
             )
           })
         }
@@ -41,13 +44,16 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[1].node.childImageSharp?.fixed;
-            if (fixedData == null) {
-              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp?.fixed.originalName == "first.png");
-              fixedData = ed.node.childImageSharp.fixed;
-            }
+            let fixedData = data.logoFiles.edges[1].node.fixed;
             return (
-              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData} />
+              <Card
+              key={index}
+              blogTitle={edge.node.frontmatter.title}
+              link={edge.node.fields.slug}
+              category={edge.node.frontmatter.category}
+              fixed={fixedData}
+              date={edge.node.frontmatter.date}
+            />
             )
           })
         }
@@ -60,7 +66,9 @@ export default IndexPage;
 
 export const query = graphql`
 query IndexTest{
-  allMarkdownRemark {
+  allMarkdownRemark(
+    limit:10
+    ) {
     edges {
       node {
         id
@@ -69,27 +77,24 @@ query IndexTest{
         }
         frontmatter {
           title
-          date
+          date(formatString: "YYYY.MM.DD")
           description
           category
         }
       }
     }
   }
-  logoFiles:allFile {
+  logoFiles:allImageSharp{
     edges {
       node {
         id
-        childImageSharp {
-          id
-          fixed(width: 300, height: 300) {
-            base64
-            width
-            height
-            src
-            srcSet
-            originalName
-          }
+        fixed(width: 300, height: 300) {
+          base64
+          width
+          height
+          src
+          srcSet
+          originalName
         }
       }
     }

@@ -18,7 +18,7 @@ const Category = styled.div({
 const Title = styled.div({
     padding: 5,
     fontSize: 16,
-    color:"#000"
+    color: "#000"
 })
 
 const Image = styled.div({
@@ -37,7 +37,7 @@ const linkCss = css({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    overflow:"hidden",
+    overflow: "hidden",
     "&:active": {
         color: "inherit"
     }
@@ -56,24 +56,32 @@ const Body = styled.div({
     }
 })
 
+const Date = styled.span({
+    fontFamily: "Vollkorn , serif",
+})
+
 interface ICardProps {
     blogTitle: string,
     link: string,
     fixed: FixedObject,
-    category: string
+    category: string,
+    date:string,
 }
 
 const Card: React.FC<ICardProps> = (props) => {
     return (
-        <Body>
-            <Link css={linkCss} to={props.link}>
-                <Category>{props.category}</Category>
-                <Image>
-                    <Img fixed={props.fixed} />
-                </Image>
-                <Title>{props.blogTitle}</Title>
-            </Link>
-        </Body>
+        <div>
+            <Date>{props.date}</Date>
+            <Body>
+                <Link css={linkCss} to={props.link}>
+                    <Category>{props.category}</Category>
+                    <Image>
+                        <Img fixed={props.fixed} />
+                    </Image>
+                    <Title>{props.blogTitle}</Title>
+                </Link>
+            </Body>
+        </div>
     )
 }
 

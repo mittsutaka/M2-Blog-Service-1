@@ -5,11 +5,13 @@ description: "queryを書くときにそのままのallFileとかallMarkdownRema
 category: "gatsby"
 ---
 
-# はじめに
+# graphQLのプロパティに名前を付ける
+
+## はじめに
 
 queryを書くときにそのままのallFileとかallMarkdownRemarkとかデフォルトの名前を使ってもいいが、複数検索したいときや名前をもっとわかりやすいプロパティにしたかった。
 
-# デフォルトのまま使った書き方
+## デフォルトのまま使った書き方
     query IndexTest{
       allMarkdownRemark {
         edges {
@@ -49,7 +51,7 @@ queryを書くときにそのままのallFileとかallMarkdownRemarkとかデフ
     `
 
 
-# 名前を付ける書き方
+## 名前を付ける書き方
 
 基本的に”名前”：プロパティ名{}でいける。
 mdFilesという名前を付ける場合↓
@@ -97,7 +99,7 @@ mdFilesという名前を付ける場合↓
     `
 
 
-# まとめ
+## まとめ
 
 すごく簡単でGraphQLの良さがだんだんとわかってきた。
 
