@@ -32,11 +32,11 @@ const Header = () => {
         <Wrapper>
             <SiteName>
                 <Link to="/">
-                    Gaming
+                    m2-Gaming
                 </Link>
             </SiteName>
             <SiteDescription>
-                ～自称プログラマの趣味サイト～
+                ～（サイト作成中）30歳プログラマ歴2年の趣味サイト～
             </SiteDescription>
         </Wrapper>
     )
