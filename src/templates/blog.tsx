@@ -23,6 +23,9 @@ const contents = css({
   },
   pre: {
     marginTop: 0
+  },
+  a:{
+    wordBreak:"break-all"
   }
 })
 
