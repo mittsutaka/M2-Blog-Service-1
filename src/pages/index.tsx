@@ -2,39 +2,48 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { IndexTestQuery } from "../../types/graphql-types";
-import Blog from "../templates/blog";
 import Card from "../components/card";
-import { css } from "@emotion/core";
+
 import styled from "@emotion/styled";
+import Label from "../components/label";
+
 
 interface Props {
   data: IndexTestQuery
 }
 
-const linkCss = css({
-  textDecoration: "none",
-  "&:active": {
-    color: "inherit"
-  }
-})
-
-const Latest = styled.div({
-  display:"flex",
-  overflow:"auto",
-  paddingBottom:15
+const Section = styled.div({
+  display: "flex",
+  overflow: "auto",
+  padding: 5,
+  marginBottom: 50,
 })
 
 const IndexPage: React.FC<Props> = ({ data }) => {
   return (
     <Layout>
-      <Latest>
-        <Link css={linkCss} to="/blogs/gatsby/first">
-          <Card blogTitle="Gatsbyを使ってみた.かなりいい感じである"></Card>
-        </Link>
-        <Link css={linkCss} to="/blogs/game/first">
-          <Card blogTitle="index"></Card>
-        </Link>
-      </Latest>
+      <Label labelName="New Posts" />
+      <Section>
+        {
+          data.allMarkdownRemark.edges.map((edge,index) => {
+            let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            return (
+              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData}/>
+            )
+          })
+        }
+      </Section>
+      <Label labelName="Pick Up" />
+      <Section>
+      {
+          data.allMarkdownRemark.edges.map((edge,index) => {
+            let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            return (
+              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug}  category={edge.node.frontmatter.category} fixed={fixedData}/>
+            )
+          })
+        }
+      </Section>
     </Layout>
   )
 }
@@ -47,12 +56,33 @@ query IndexTest{
     edges {
       node {
         id
+        fields {
+          slug
+        }
         frontmatter {
           title
           date
           description
+          category
         }
-        html
+      }
+    }
+  }
+  logoFiles:allFile {
+    edges {
+      node {
+        id
+        childImageSharp {
+          id
+          fixed(width: 300, height: 300) {
+            base64
+            width
+            height
+            src
+            srcSet
+            originalName
+          }
+        }
       }
     }
   }

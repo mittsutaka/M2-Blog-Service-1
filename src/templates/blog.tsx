@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 
 const contents = css({
     P: {
-        marginTop: 40,
+        marginBottom: 40,
     }
 })
 
