@@ -25,21 +25,29 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Label labelName="New Posts" />
       <Section>
         {
-          data.allMarkdownRemark.edges.map((edge,index) => {
+          data.allMarkdownRemark.edges.map((edge, index) => {
             let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            if (fixedData == null) {
+              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp.fixed.originalName == "first.png");
+              fixedData = ed.node.childImageSharp.fixed;
+            }
             return (
-              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData}/>
+              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData} />
             )
           })
         }
       </Section>
       <Label labelName="Pick Up" />
       <Section>
-      {
-          data.allMarkdownRemark.edges.map((edge,index) => {
+        {
+          data.allMarkdownRemark.edges.map((edge, index) => {
             let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            if (fixedData == null) {
+              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp.fixed.originalName == "first.png");
+              fixedData = ed.node.childImageSharp.fixed;
+            }
             return (
-              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug}  category={edge.node.frontmatter.category} fixed={fixedData}/>
+              <Card key={index} blogTitle={edge.node.frontmatter.title} link={edge.node.fields.slug} category={edge.node.frontmatter.category} fixed={fixedData} />
             )
           })
         }
