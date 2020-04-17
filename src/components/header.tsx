@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { Link } from "gatsby";
 
-const Wrapper = styled.div({
+const Wrapper = styled.header({
     backgroundColor: "#2E326A",
     padding: 5,
     color: "#FFFFFF",

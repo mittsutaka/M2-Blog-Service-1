@@ -17,8 +17,13 @@ const Category = styled.div({
 
 const Title = styled.div({
     padding: 5,
-    fontSize: 16,
-    color: "#000"
+    color: "#000",
+    h2: {
+
+        fontWeight: "bold",
+        fontSize: 16,
+        color: "#333333"
+    }
 })
 
 const Image = styled.div({
@@ -65,7 +70,7 @@ interface ICardProps {
     link: string,
     fixed: FixedObject,
     category: string,
-    date:string,
+    date: string,
 }
 
 const Card: React.FC<ICardProps> = (props) => {
@@ -78,7 +83,7 @@ const Card: React.FC<ICardProps> = (props) => {
                     <Image>
                         <Img fixed={props.fixed} />
                     </Image>
-                    <Title>{props.blogTitle}</Title>
+                    <Title><h2>{props.blogTitle}</h2></Title>
                 </Link>
             </Body>
         </div>

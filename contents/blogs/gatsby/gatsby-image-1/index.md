@@ -14,34 +14,37 @@ Gatsby.jsとTypescriptを使っている本サイトを作成中に画像を表�
 ## エラー内容
 
 下記コードのfixedに対してエラーが出る。
-
+```js
     <Img fixed={data.allFile.edges[2].node.childImageSharp.fixed} />
+```
 ![](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085325819_image.png)
 
 
 コンソールを見ても
-
+```js
     Failed prop type: Invalid prop `fixed` supplied to `Image`.
+```
 ![](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085724620_image.png)
 
 
 とエラーが出ていることがわかる。
 
 
-#3 原因
+## 原因
 
 完全にイージーなミスであったが、queryが間違っていた。
 
 ## 修正前のquery
-              fixed(width: 300, height: 300) {
-                base64
-                tracedSVG
-                aspectRatio
-                srcWebp
-                srcSetWebp
-                originalName
-              }
-
+```tsx
+fixed(width: 300, height: 300) {
+  base64
+  tracedSVG
+  aspectRatio
+  srcWebp
+  srcSetWebp
+  originalName
+}
+```
 
 ## 対処方法
 
@@ -54,14 +57,16 @@ https://github.com/gatsbyjs/gatsby/issues/9882
 
 
 ## 修正後のquery
-              fixed(width: 300, height: 300) {
-                base64
-                width
-                height
-                src
-                srcSet
-                originalName
-              }
+```tsx
+fixed(width: 300, height: 300) {
+  base64
+  width
+  height
+  src
+  srcSet
+  originalName
+}
+```
 ## 考察
 
 最初のqueryはlocalhost:8000/___graphqlでfixedを押下したときに自動で出てくるもので、自動だからこれでいいだろうと思い込んでいた。
@@ -78,7 +83,7 @@ https://github.com/gatsbyjs/gatsby/issues/9882
 
 暫定的なコードで値をそのまま入れているところも多いがご容赦
 
-
+```tsx
     const IndexPage: React.FC<Props> = ({ data }) => {
       return (
         <Layout>
@@ -132,4 +137,4 @@ https://github.com/gatsbyjs/gatsby/issues/9882
       }
     }
     `
-
+```

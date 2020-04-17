@@ -11,38 +11,42 @@ category: "C#"
 
 業務でASP.NET MVCの404エラー時に404用の画面を設定したのでそれに関して備忘録としてまとめる
 
-## ①Web.configへのcustomErrorsの追加
+## Web.configへのcustomErrorsの追加
 
 下記のように404エラーが起きたときにリダイレクトするように設定する
-
+```xml:title=Web.config
       <system.web>
         <customErrors defaultRedirect="~/Error/" mode="On">
           <error statusCode="404" redirect="~/Error/NotFound"/>
         </customErrors>
       </system.web>
+```
 
-
-## ②ErrorControllerを作成する
-        public class ErrorController : Controller
-        {
-            public ActionResult NotFound()
-            {
-                return View();
-            }
-        }
-
-
-## ③エラー画面のページを作成する
-    @{
-        ViewBag.Title = "404 Not Found";
+## ErrorControllerを作成する
+```cs:title=ErrorController.cs
+public class ErrorController : Controller
+{
+    public ActionResult NotFound()
+    {
+        return View();
     }
-    <div class="body-section">
-        <div class="flex-col text-center ali-c mt-20">
-            <p class="fs-128">404</p>
-            <p class="fs-28">Sorry, the page you're looking for cannot be found...</p>
-            <button class="error-btn" onclick="location.href='/Recipe/Register'">トップページへ</button>
-        </div>
+}
+```
+
+
+## エラー画面のページを作成する
+```cs:title=NotFound.cshtml
+@{
+    ViewBag.Title = "404 Not Found";
+}
+<div class="body-section">
+    <div class="flex-col text-center ali-c mt-20">
+        <p class="fs-128">404</p>
+        <p class="fs-28">Sorry, the page you're looking for cannot be found...</p>
+        <button class="error-btn" onclick="location.href='/Recipe/Register'">トップページへ</button>
     </div>
+</div>
+```
 
 
 ## 参考資料

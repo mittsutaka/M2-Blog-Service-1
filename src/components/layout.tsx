@@ -1,7 +1,11 @@
 import * as React from 'react';
 import Header from "../components/header";
-import Body from "../components/body";
 import Footer from './footer';
+import styled from "@emotion/styled";
+
+const Body = styled.main({
+    margin: "4% 5%",
+})
 
 const Layout: React.FC = ({ children }) => {
     return (

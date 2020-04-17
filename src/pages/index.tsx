@@ -26,7 +26,10 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[0].node.fixed;
+            console.log(data.logoFiles);
+            let file = data.logoFiles.edges.find(t=>`/${t.node.relativePath}`==`${edge.node.fields.slug}logo.png`);
+            console.log(file);
+            let fixedData = file.node.childImageSharp.fixed;
             return (
               <Card
                 key={index}
@@ -44,7 +47,8 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[1].node.fixed;
+            let file = data.logoFiles.edges.find(t=>`/${t.node.relativePath}`==`${edge.node.fields.slug}logo.png`);
+            let fixedData = file.node.childImageSharp.fixed;
             return (
               <Card
               key={index}
@@ -85,17 +89,20 @@ query IndexTest{
       }
     }
   }
-  logoFiles:allImageSharp{
+  logoFiles:allFile(filter: {name: {eq: "logo"}}){
     edges {
       node {
         id
-        fixed(width: 300, height: 300) {
-          base64
-          width
-          height
-          src
-          srcSet
-          originalName
+        relativePath
+        childImageSharp{
+          fixed(width: 280, height: 300) {
+            base64
+            width
+            height
+            src
+            srcSet
+            originalName
+          }
         }
       }
     }

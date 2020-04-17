@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 
-const Wrapper = styled.div({
+const Wrapper = styled.footer({
     backgroundColor:"#646464",
     height:100,
 })

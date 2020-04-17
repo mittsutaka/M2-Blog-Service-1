@@ -65,7 +65,33 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 590,
             }
-          }
+          },
+          'gatsby-remark-prismjs-title',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {
+                js: 'javascript',
+                sh: 'bash',
+              },
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: 'superscript',
+                  extend: 'javascript',
+                  definition: { superscript_types: /(SuperType)/ },
+                  insertBefore: {
+                    function: { superscript_keywords: /(superif|superelse)/ },
+                  },
+                },
+              ],
+              prompt: { user: 'root', host: 'localhost', global: false },
+              escapeEntities: {},
+            },
+          },
         ]
       }
     }
