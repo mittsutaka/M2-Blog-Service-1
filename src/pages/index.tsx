@@ -26,9 +26,9 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            let fixedData = data.logoFiles.edges[1].node.childImageSharp?.fixed;
             if (fixedData == null) {
-              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp.fixed.originalName == "first.png");
+              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp?.fixed.originalName == "first.png");
               fixedData = ed.node.childImageSharp.fixed;
             }
             return (
@@ -41,9 +41,9 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let fixedData = data.logoFiles.edges[1].node.childImageSharp.fixed;
+            let fixedData = data.logoFiles.edges[1].node.childImageSharp?.fixed;
             if (fixedData == null) {
-              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp.fixed.originalName == "first.png");
+              let ed = data.logoFiles.edges.find(t => t.node.childImageSharp?.fixed.originalName == "first.png");
               fixedData = ed.node.childImageSharp.fixed;
             }
             return (
