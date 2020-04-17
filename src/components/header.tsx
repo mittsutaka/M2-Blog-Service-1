@@ -7,10 +7,12 @@ const Wrapper = styled.header({
     backgroundColor: "#2E326A",
     padding: 5,
     color: "#FFFFFF",
-    height: 60,
+    height: "auto",
     display: "flex",
     alignItems: "center",
-
+    "@media (max-width: 600px)":{
+        flexDirection:"column"
+    }
 })
 
 const SiteName = styled.div({
@@ -22,7 +24,7 @@ const SiteName = styled.div({
         textDecoration:"none"
     },
     "@media (max-width: 600px)":{
-        fontSize:22
+        fontSize:24
     }
 })
 
