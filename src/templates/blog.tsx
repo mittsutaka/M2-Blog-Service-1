@@ -24,10 +24,16 @@ const contents = css({
   pre: {
     marginTop: 0
   },
-  a:{
-    wordBreak:"break-all"
+  a: {
+    wordBreak: "break-all"
   },
-  "@media (max-width: 600px)":{
+  ul: {
+    paddingLeft: 30
+  },
+  img: {
+    width: "100%"
+  },
+  "@media (max-width: 600px)": {
     P: {
       fontSize: 14,
       lineHeight: 2,
@@ -41,8 +47,8 @@ const contents = css({
       marginBottom: 10,
       marginTop: 50
     },
-    pre:{
-      fontSize:14
+    pre: {
+      fontSize: 14
     }
   }
 })
@@ -53,7 +59,7 @@ interface Props {
 
 const Date = styled.span({
   fontFamily: "Vollkorn , serif",
-  fontWeight:"bold"
+  fontWeight: "bold"
 })
 
 const Blog: React.FC<Props> = ({ data }) => {
