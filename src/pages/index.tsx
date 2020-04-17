@@ -68,6 +68,7 @@ export const query = graphql`
 query IndexTest{
   allMarkdownRemark(
     limit:10
+    sort: {fields: frontmatter___date, order: DESC}
     ) {
     edges {
       node {
