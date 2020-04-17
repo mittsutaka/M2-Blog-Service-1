@@ -26,6 +26,24 @@ const contents = css({
   },
   a:{
     wordBreak:"break-all"
+  },
+  "@media (max-width: 600px)":{
+    P: {
+      fontSize: 14,
+      lineHeight: 2,
+    },
+    h1: {
+      fontSize: 18,
+    },
+    h2: {
+      fontSize: 16,
+      borderBottom: "1px solid lightgray",
+      marginBottom: 10,
+      marginTop: 50
+    },
+    pre:{
+      fontSize:14
+    }
   }
 })
 

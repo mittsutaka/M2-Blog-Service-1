@@ -9,7 +9,8 @@ const Wrapper = styled.header({
     color: "#FFFFFF",
     height: 60,
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
+
 })
 
 const SiteName = styled.div({
@@ -19,12 +20,18 @@ const SiteName = styled.div({
     a:{
         color:"#FFFFFF",
         textDecoration:"none"
+    },
+    "@media (max-width: 600px)":{
+        fontSize:22
     }
 })
 
 const SiteDescription = styled.div({
     padding: "5px 20px",
-    marginTop: "auto"
+    marginTop: "auto",
+    "@media (max-width: 600px)":{
+        fontSize:12
+    }
 })
 
 const Header = () => {
