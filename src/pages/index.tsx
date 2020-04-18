@@ -6,7 +6,7 @@ import Card from "../components/card";
 import Form from "../components/form";
 import styled from "@emotion/styled";
 import Label from "../components/label";
-
+import SEO from "../components/SEO";
 
 interface Props {
   data: IndexTestQuery
@@ -22,12 +22,13 @@ const Section = styled.div({
 const IndexPage: React.FC<Props> = ({ data }) => {
   return (
     <Layout>
+      <SEO />
       <Label labelName="New Posts" />
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
             console.log(data.logoFiles);
-            let file = data.logoFiles.edges.find(t=>`/${t.node.relativePath}`==`${edge.node.fields.slug}logo.png`);
+            let file = data.logoFiles.edges.find(t => `/${t.node.relativePath}` == `${edge.node.fields.slug}logo.png`);
             console.log(file);
             let fixedData = file.node.childImageSharp.fixed;
             return (
@@ -47,17 +48,17 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            let file = data.logoFiles.edges.find(t=>`/${t.node.relativePath}`==`${edge.node.fields.slug}logo.png`);
+            let file = data.logoFiles.edges.find(t => `/${t.node.relativePath}` == `${edge.node.fields.slug}logo.png`);
             let fixedData = file.node.childImageSharp.fixed;
             return (
               <Card
-              key={index}
-              blogTitle={edge.node.frontmatter.title}
-              link={edge.node.fields.slug}
-              category={edge.node.frontmatter.category}
-              fixed={fixedData}
-              date={edge.node.frontmatter.date}
-            />
+                key={index}
+                blogTitle={edge.node.frontmatter.title}
+                link={edge.node.fields.slug}
+                category={edge.node.frontmatter.category}
+                fixed={fixedData}
+                date={edge.node.frontmatter.date}
+              />
             )
           })
         }
