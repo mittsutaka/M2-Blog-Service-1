@@ -6,7 +6,7 @@ import Img, { FixedObject } from 'gatsby-image';
 
 const Category = styled.div({
     width: "100%",
-    backgroundColor: "cadetblue",
+    backgroundColor: "#333",
     fontSize: 18,
     textAlign: "center",
     marginRight: "auto",
