@@ -5,6 +5,7 @@ interface IFormBlockProps {
     name: string,
     type: string,
     label: string,
+    id:string;
 }
 
 const FlexColumn = styled.div({
@@ -35,14 +36,14 @@ const FormTextArea = styled.textarea({
 
 const FormLabel = styled.label({
     fontFamily: "Vollkorn , serif",
-    fontSize: 18
+    fontSize: 18,
 })
 
 const FormBlock = (props: IFormBlockProps) => {
     return (
         <FlexColumn>
-            <FormLabel>{props.label}</FormLabel>
-            <InputBox type={props.type} name={props.name}></InputBox>
+            <FormLabel htmlFor={props.id}>{props.label}</FormLabel>
+            <InputBox id={props.id} type={props.type} name={props.name}></InputBox>
         </FlexColumn>
     )
 }
@@ -64,11 +65,11 @@ const Form = () => {
         <Wrapper>
             <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                <FormBlock label="Name" type="text" name="name" />
-                <FormBlock label="Email" type="email" name="email" />
+                <FormBlock id="form_name" label="Name" type="text" name="name" />
+                <FormBlock id="form_email" label="Email" type="email" name="email" />
                 <FlexColumn>
-                    <FormLabel>Message</FormLabel>
-                    <FormTextArea name="message"></FormTextArea>
+                    <FormLabel htmlFor="form_message">Message</FormLabel>
+                    <FormTextArea id="form_message" name="message"></FormTextArea>
                 </FlexColumn>
                 <SendButton type="submit">Send</SendButton>
             </form>
