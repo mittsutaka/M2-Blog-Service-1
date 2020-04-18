@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { IndexTestQuery } from "../../types/graphql-types";
 import Card from "../components/card";
-
+import Form from "../components/form";
 import styled from "@emotion/styled";
 import Label from "../components/label";
 
@@ -62,6 +62,8 @@ const IndexPage: React.FC<Props> = ({ data }) => {
           })
         }
       </Section>
+      <Label labelName="Contact Me" />
+      <Form />
     </Layout>
   )
 }
