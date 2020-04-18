@@ -2,7 +2,7 @@
 title: graphQLのプロパティに名前を付ける
 date: "2020-04-17T02:12:03.284Z"
 description: "queryを書くときにそのままのallFileとかallMarkdownRemarkとかデフォルトの名前を使ってもいいが、複数検索したいときや名前をもっとわかりやすいプロパティにしたかった。"
-category: "gatsby"
+category: "Gatsby"
 ---
 
 # graphQLのプロパティに名前を付ける

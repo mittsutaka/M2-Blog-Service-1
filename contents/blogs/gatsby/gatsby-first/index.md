@@ -2,7 +2,7 @@
 title: "Gatsby.jsを使いこなす"
 date: "2020-04-15T01:12:03.284Z"
 description: "本ブログサイトを立ち上げるにあたり、何で作成しようか検討した結果以下理由からGatsby.jsを採用した。その選定理由に関して"
-category: "gatsby"
+category: "Gatsby"
 ---
 
 # Gatsby.jsを使いこなす

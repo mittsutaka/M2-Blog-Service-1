@@ -2,7 +2,7 @@
 title: gatsby-imageでエラーが出る
 date: "2020-04-17T01:12:03.284Z"
 description: "Gatsby.jsとTypescriptを使っている本サイトを作成中に画像を表示させようとしたところエラーが出てかなり詰まったのでその原因と対処法に関してまとめます。"
-category: "gatsby"
+category: "Gatsby"
 ---
 
 # gatsby-imageでエラーが出る
