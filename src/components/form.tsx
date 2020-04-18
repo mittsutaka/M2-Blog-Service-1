@@ -54,12 +54,17 @@ const SendButton = styled.button({
     borderRadius: 5
 })
 
+const Wrapper = styled.div({
+    margin: "auto",
+    width: 600
+})
+
 const Form = () => {
     return (
-        <div>
+        <Wrapper>
             {/* <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"> */}
             <form name="contact" method="POST" data-netlify="true">
-                {/* <input type="hidden" name="form-name" value="contact" /> */}
+                <input type="hidden" name="form-name" value="contact" />
                 {/* <input type="hidden" name="bot-field" /> */}
                 <FormBlock label="Name" type="text" name="name" />
                 <FormBlock label="Email" type="email" name="email" />
@@ -69,7 +74,7 @@ const Form = () => {
                 </FlexColumn>
                 <SendButton type="submit">Send</SendButton>
             </form>
-        </div>
+        </Wrapper>
     )
 }
 
