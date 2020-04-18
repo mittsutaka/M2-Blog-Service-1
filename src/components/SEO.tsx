@@ -67,7 +67,7 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
     }) => {
       const seo = {
         title: title || defaultTitle,
-        description: defaultDescription || desc,
+        description: desc || defaultDescription,
         image: `${siteUrl}${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
@@ -121,7 +121,6 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
           },
         ];
       }
-      console.log(schemaOrgJSONLD);
       return (
         <>
           <Helmet title={seo.title}>

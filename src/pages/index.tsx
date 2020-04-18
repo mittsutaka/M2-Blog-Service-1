@@ -6,7 +6,6 @@ import Card from "../components/card";
 import Form from "../components/form";
 import styled from "@emotion/styled";
 import Label from "../components/label";
-import SEO from "../components/SEO";
 
 interface Props {
   data: IndexTestQuery
@@ -22,14 +21,11 @@ const Section = styled.div({
 const IndexPage: React.FC<Props> = ({ data }) => {
   return (
     <Layout>
-      <SEO />
       <Label labelName="New Posts" />
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            console.log(data.logoFiles);
             let file = data.logoFiles.edges.find(t => `/${t.node.relativePath}` == `${edge.node.fields.slug}logo.png`);
-            console.log(file);
             let fixedData = file.node.childImageSharp.fixed;
             return (
               <Card
