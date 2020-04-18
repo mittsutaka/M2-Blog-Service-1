@@ -48,7 +48,7 @@ const FormBlock = (props: IFormBlockProps) => {
 }
 
 const SendButton = styled.button({
-    backgroundColor: "darkcyan",
+    backgroundColor: "#333",
     color: "#fff",
     padding: "5px 50px",
     borderRadius: 5
