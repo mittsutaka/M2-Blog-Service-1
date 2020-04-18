@@ -66,7 +66,7 @@ const Date = styled.span({
 const Blog: React.FC<Props> = ({ data }) => {
   return (
     <Layout>
-      <SEO title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} />
+      <SEO title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} article={true} />
       <div css={contents}>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
       </div>

@@ -121,6 +121,7 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
           },
         ];
       }
+      console.log(schemaOrgJSONLD);
       return (
         <>
           <Helmet title={seo.title}>
