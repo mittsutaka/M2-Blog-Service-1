@@ -4,6 +4,7 @@ import { css } from "@emotion/core";
 import { graphql } from "gatsby";
 import { BlogDataQuery } from "../../types/graphql-types";
 import Layout from "../components/layout";
+import SEO from "../components/SEO";
 
 const contents = css({
   maxWidth: 800,
@@ -65,6 +66,7 @@ const Date = styled.span({
 const Blog: React.FC<Props> = ({ data }) => {
   return (
     <Layout>
+      <SEO title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} />
       <div css={contents}>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
       </div>
