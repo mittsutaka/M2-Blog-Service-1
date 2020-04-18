@@ -17,14 +17,14 @@ Gatsby.jsとTypescriptを使っている本サイトを作成中に画像を表�
 ```js
     <Img fixed={data.allFile.edges[2].node.childImageSharp.fixed} />
 ```
-![](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085325819_image.png)
+![fixedエラー画面](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085325819_image.png)
 
 
 コンソールを見ても
 ```js
     Failed prop type: Invalid prop `fixed` supplied to `Image`.
 ```
-![](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085724620_image.png)
+![fixedコンソールエラー画面](https://paper-attachments.dropbox.com/s_C296D179F85A37FEC685BD7D73AF5249529D29FE72BC36371E5EFC4AB3FDF8D2_1587085724620_image.png)
 
 
 とエラーが出ていることがわかる。

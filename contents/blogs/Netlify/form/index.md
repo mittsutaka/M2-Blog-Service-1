@@ -40,7 +40,7 @@ Netlifyにはフォーム処理が元から組み込まれていて、デプロ�
 
 と公式ドキュメントには書いてあるがそのままやると下のようなエラー（?）が出る。
 
-![](https://paper-attachments.dropbox.com/s_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587177044301_image.png)
+![Netlify フォーム失敗画面](https://paper-attachments.dropbox.com/s_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587177044301_image.png)
 
 
 これは普通のサイトならNetlifyが自動的に
@@ -62,7 +62,7 @@ Netlifyにはフォーム処理が元から組み込まれていて、デプロ�
 するとこのようなデフォルトの画面が出て成功できたことがわかる。
 あとはNetlifyのサイトにいけば送信された情報が届いている。
 
-![](https://paper-attachments.dropbox.com/s_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587177189779_image.png)
+![Netlify フォーム成功画面](https://paper-attachments.dropbox.com/s_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587177189779_image.png)
 
 ## ファイルアップロード
 
@@ -79,7 +79,7 @@ Netlifyにはフォーム処理が元から組み込まれていて、デプロ�
 おかしなところがあったら是非問い合わせフォームより指摘をお願いします。
 
 デザインはこんな感じ
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropbox.com%2Fs_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587178157002_image.png&hmac=BxXyMN53qJIeKoU9F5IthXnwYUJiR9%2Bvnm0sz9ltj8E%3D&width=1490)
+![本サイトのフォームデザイン](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropbox.com%2Fs_7EDA8B45153C2C700E2F73B690C3F6359551A38A465DB450B74EF0CA587086A8_1587178157002_image.png&hmac=BxXyMN53qJIeKoU9F5IthXnwYUJiR9%2Bvnm0sz9ltj8E%3D&width=1490)
 
 ```tsx:title=Form.tsx
 import * as React from "react";
