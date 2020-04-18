@@ -56,7 +56,7 @@ const SendButton = styled.button({
 
 const Wrapper = styled.div({
     margin: "auto",
-    width: 600
+    maxWidth: 600
 })
 
 const Form = () => {
