@@ -57,9 +57,10 @@ const SendButton = styled.button({
 const Form = () => {
     return (
         <div>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="bot-field" />
+            {/* <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"> */}
+            <form name="contact" method="POST" data-netlify="true">
+                {/* <input type="hidden" name="form-name" value="contact" /> */}
+                {/* <input type="hidden" name="bot-field" /> */}
                 <FormBlock label="Name" type="text" name="name" />
                 <FormBlock label="Email" type="email" name="email" />
                 <FlexColumn>
