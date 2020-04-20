@@ -43,7 +43,7 @@ module.exports = {
         `gatsby-plugin-offline`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-emotion`,
-        //`gatsby-plugin-sitemap`,
+        `gatsby-plugin-sitemap`,
         // {
         //     resolve: `gatsby-plugin-sitemap`,
         //     options: {
