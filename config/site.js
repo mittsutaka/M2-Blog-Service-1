@@ -4,7 +4,7 @@ module.exports = {
     titleAlt: 'My Wonderful Website', // JSONLDのためのタイトル
     description: 'プログラミングに関するナレッジや趣味のゲームなど多岐にわたるプログラマの趣味ブログ',
     url: 'https://m2-gaming.com', // スラッシュなしのサイトURL
-    siteURL: 'https://m2-gaming.com/', // スラッシュありのサイトURL
+    siteUrl: 'https://m2-gaming.com/', // スラッシュありのサイトURL
     siteLanguage: 'ja', // HTMLの言語（ここでは日本語）
     logo: 'src/images/gatsby-icon.png',
     banner: 'src/images/gatsby-icon.png',

@@ -43,6 +43,14 @@ module.exports = {
         `gatsby-plugin-offline`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-emotion`,
+        `gatsby-plugin-sitemap`,
+        // {
+        //     resolve: `gatsby-plugin-sitemap`,
+        //     options: {
+        //       output: `/sitemap.xml`,
+        //       exclude: [`/page-2`,`/thanks`,`/dev-404-page`],
+        //     }
+        //   },
         {
             resolve: `gatsby-transformer-remark`,
             options: {

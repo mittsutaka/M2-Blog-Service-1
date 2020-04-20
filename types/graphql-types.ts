@@ -2155,7 +2155,7 @@ export type SiteFieldsEnum =
   'siteMetadata___titleAlt' |
   'siteMetadata___description' |
   'siteMetadata___url' |
-  'siteMetadata___siteURL' |
+  'siteMetadata___siteUrl' |
   'siteMetadata___siteLanguage' |
   'siteMetadata___logo' |
   'siteMetadata___banner' |
@@ -3093,7 +3093,7 @@ export type SiteSiteMetadata = {
   titleAlt?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   url?: Maybe<Scalars['String']>;
-  siteURL?: Maybe<Scalars['String']>;
+  siteUrl?: Maybe<Scalars['String']>;
   siteLanguage?: Maybe<Scalars['String']>;
   logo?: Maybe<Scalars['String']>;
   banner?: Maybe<Scalars['String']>;
@@ -3111,7 +3111,7 @@ export type SiteSiteMetadataFilterInput = {
   titleAlt?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   url?: Maybe<StringQueryOperatorInput>;
-  siteURL?: Maybe<StringQueryOperatorInput>;
+  siteUrl?: Maybe<StringQueryOperatorInput>;
   siteLanguage?: Maybe<StringQueryOperatorInput>;
   logo?: Maybe<StringQueryOperatorInput>;
   banner?: Maybe<StringQueryOperatorInput>;
@@ -3148,9 +3148,14 @@ export type SeoQuery = { site?: Maybe<(
     Pick<Site, 'buildTime'>
     & { siteMetadata?: Maybe<(
       Pick<SiteSiteMetadata, 'titleAlt' | 'shortName' | 'author' | 'siteLanguage' | 'logo' | 'pathPrefix' | 'twitter'>
-      & { defaultTitle: SiteSiteMetadata['title'], siteUrl: SiteSiteMetadata['url'], defaultDescription: SiteSiteMetadata['description'], defaultBanner: SiteSiteMetadata['banner'] }
+      & { defaultTitle: SiteSiteMetadata['title'], siteURL: SiteSiteMetadata['url'], defaultDescription: SiteSiteMetadata['description'], defaultBanner: SiteSiteMetadata['banner'] }
     )> }
   )> };
+
+export type NotFoundQueryVariables = {};
+
+
+export type NotFoundQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
 export type IndexTestQueryVariables = {};
 

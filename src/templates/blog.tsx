@@ -4,7 +4,7 @@ import { css } from "@emotion/core";
 import { graphql } from "gatsby";
 import { BlogDataQuery } from "../../types/graphql-types";
 import Layout from "../components/layout";
-import SEO from "../components/SEO";
+import SEO from "../components/seo";
 
 const contents = css({
   maxWidth: 800,
