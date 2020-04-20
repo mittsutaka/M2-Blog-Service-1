@@ -5,7 +5,7 @@ interface IFormBlockProps {
     name: string,
     type: string,
     label: string,
-    id:string;
+    id: string;
 }
 
 const FlexColumn = styled.div({
@@ -56,13 +56,15 @@ const SendButton = styled.button({
 })
 
 const Wrapper = styled.div({
-    margin: "auto",
-    maxWidth: 600
+    width:"50%",
+    "@media (max-width: 800px)": {
+        width:"100%"
+    }
 })
 
 const Form = () => {
     return (
-        <Wrapper>
+        <Wrapper id="contact">
             <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <FormBlock id="form_name" label="Name" type="text" name="name" />

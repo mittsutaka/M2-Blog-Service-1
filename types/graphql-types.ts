@@ -3141,6 +3141,17 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
+export type SeoQueryVariables = {};
+
+
+export type SeoQuery = { site?: Maybe<(
+    Pick<Site, 'buildTime'>
+    & { siteMetadata?: Maybe<(
+      Pick<SiteSiteMetadata, 'titleAlt' | 'shortName' | 'author' | 'siteLanguage' | 'logo' | 'pathPrefix' | 'twitter'>
+      & { defaultTitle: SiteSiteMetadata['title'], siteUrl: SiteSiteMetadata['url'], defaultDescription: SiteSiteMetadata['description'], defaultBanner: SiteSiteMetadata['banner'] }
+    )> }
+  )> };
+
 export type NotFoundQueryVariables = {};
 
 

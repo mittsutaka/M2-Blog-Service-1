@@ -10,31 +10,57 @@ const Wrapper = styled.header({
     height: "auto",
     display: "flex",
     alignItems: "center",
-    "@media (max-width: 600px)":{
-        flexDirection:"column"
+    fontFamily: "Vollkorn , serif",
+    "@media (max-width: 600px)": {
+        flexDirection: "column"
     }
 })
 
 const SiteName = styled.div({
     paddingLeft: 5,
     fontSize: 32,
-    fontFamily: "serif",
-    a:{
-        color:"#FFFFFF",
-        textDecoration:"none"
+
+    a: {
+        color: "#FFFFFF",
+        textDecoration: "none"
     },
-    "@media (max-width: 600px)":{
-        fontSize:24
+    "@media (max-width: 600px)": {
+        fontSize: 24
     }
 })
 
 const SiteDescription = styled.div({
     padding: "5px 20px",
     marginTop: "auto",
-    "@media (max-width: 600px)":{
-        fontSize:12
+    "@media (max-width: 600px)": {
+        fontSize: 12
     }
 })
+
+const SideMenuWrapper = styled.div({
+    display: "flex",
+    flexDirection: "row",
+    margin: "auto 0 0 auto",
+    padding:"0 100px 5px 0"
+})
+
+const MenuLink = styled.a({
+    marginLeft: 30,
+    color:"#fff",
+    textDecoration:"none",
+    "&:hover":{
+        color:"thistle"
+    }
+})
+
+const SideMenu = () => {
+    return (
+        <SideMenuWrapper>
+            <MenuLink href="#contact">Contact</MenuLink>
+            <MenuLink href="#about">About</MenuLink>
+        </SideMenuWrapper>
+    )
+}
 
 const Header = () => {
     return (
@@ -47,6 +73,7 @@ const Header = () => {
             <SiteDescription>
                 ～30歳プログラマ歴2年の趣味サイト～
             </SiteDescription>
+            <SideMenu />
         </Wrapper>
     )
 }
