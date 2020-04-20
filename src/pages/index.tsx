@@ -94,7 +94,7 @@ query IndexTest{
         id
         relativePath
         childImageSharp{
-          fixed(width: 280, height: 300) {
+          fixed(width: 280, height: 210) {
             base64
             width
             height
