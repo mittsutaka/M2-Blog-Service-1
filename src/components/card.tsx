@@ -18,6 +18,7 @@ const Category = styled.div({
 const Title = styled.div({
     padding: 5,
     color: "#000",
+    lineHeight:1.3,
     h2: {
 
         fontWeight: "bold",
