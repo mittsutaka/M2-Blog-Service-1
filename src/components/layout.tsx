@@ -8,10 +8,17 @@ const Body = styled.main({
     margin: "4% 5%",
 })
 
-const Layout: React.FC = ({ children }) => {
+interface ILayoutProps {
+    children: React.ReactNode,
+    title?: string,
+    desc?: string,
+    article?: boolean
+}
+
+const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article }) => {
     return (
         <div>
-            <SEO />
+            <SEO title={title} desc={desc} article={article} />
             <Header />
             <Body>
                 {children}
