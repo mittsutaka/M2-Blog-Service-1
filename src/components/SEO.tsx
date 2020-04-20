@@ -162,7 +162,7 @@ SEO.defaultProps = {
 };
 
 const query = graphql`
-  query SEO1 {
+  query SEO {
     site {
       buildTime(formatString: "YYYY年MM月DD日")
       siteMetadata {

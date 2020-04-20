@@ -2,20 +2,22 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-import {NotFoundQuery} from "../../types/graphql-types";
+import { NotFoundQuery } from "../../types/graphql-types";
 
-interface INotFoundProps{
-  data:NotFoundQuery,
-  location:string
+interface INotFoundProps {
+  data: NotFoundQuery,
+  location: string
 }
 
-const NotFoundPage:React.FC<INotFoundProps> = ({ data }) => {
+const NotFoundPage: React.FC<INotFoundProps> = ({ data }) => {
 
   return (
-    <Layout>
+    // <Layout>
+    <div>
       <h1>Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+    </div>
+    {/* </Layout> */ }
   )
 }
 
