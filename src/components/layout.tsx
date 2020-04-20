@@ -11,7 +11,7 @@ const Body = styled.main({
 const Layout: React.FC = ({ children }) => {
     return (
         <div>
-            {/* <SEO /> */}
+            <SEO />
             <Header />
             <Body>
                 {children}
