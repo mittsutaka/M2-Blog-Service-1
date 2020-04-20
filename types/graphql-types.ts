@@ -3141,10 +3141,10 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
-export type SeoQueryVariables = {};
+export type Seo1QueryVariables = {};
 
 
-export type SeoQuery = { site?: Maybe<(
+export type Seo1Query = { site?: Maybe<(
     Pick<Site, 'buildTime'>
     & { siteMetadata?: Maybe<(
       Pick<SiteSiteMetadata, 'titleAlt' | 'shortName' | 'author' | 'siteLanguage' | 'logo' | 'pathPrefix' | 'twitter'>
