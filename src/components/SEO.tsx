@@ -57,7 +57,7 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
           author,
           siteLanguage,
           logo,
-          siteURL,
+          siteUrl,
           pathPrefix,
           defaultDescription,
           defaultBanner,
@@ -68,16 +68,16 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
       const seo = {
         title: title || defaultTitle,
         description: desc || defaultDescription,
-        image: `${siteURL}${banner || defaultBanner}`,
-        url: `${siteURL}${pathname || '/'}`,
+        image: `${siteUrl}${banner || defaultBanner}`,
+        url: `${siteUrl}${pathname || '/'}`,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
       let schemaOrgJSONLD: ISchemaOrgJSONLD[] = [
         {
           '@context': 'http://schema.org',
           '@type': 'WebSite',
-          '@id': siteURL,
-          url: siteURL,
+          '@id': siteUrl,
+          url: siteUrl,
           name: defaultTitle,
           alternateName: titleAlt || '',
           headline: "rr"
@@ -110,13 +110,13 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
               name: author,
               logo: {
                 '@type': 'ImageObject',
-                url: siteURL + realPrefix + logo,
+                url: siteUrl + realPrefix + logo,
               },
             },
-            isPartOf: siteURL,
+            isPartOf: siteUrl,
             mainEntityOfPage: {
               '@type': 'WebSite',
-              '@id': siteURL,
+              '@id': siteUrl,
             },
           },
         ];
@@ -172,7 +172,7 @@ const query = graphql`
         author
         siteLanguage
         logo
-        siteURL: url
+        siteUrl: url
         pathPrefix
         defaultDescription: description
         defaultBanner: banner
