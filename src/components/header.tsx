@@ -11,7 +11,7 @@ const Wrapper = styled.header({
     display: "flex",
     alignItems: "center",
     fontFamily: "Vollkorn , serif",
-    "@media (max-width: 600px)": {
+    "@media (max-width: 800px)": {
         flexDirection: "column"
     }
 })
@@ -24,7 +24,7 @@ const SiteName = styled.div({
         color: "#FFFFFF",
         textDecoration: "none"
     },
-    "@media (max-width: 600px)": {
+    "@media (max-width: 800px)": {
         fontSize: 24
     }
 })
@@ -40,12 +40,11 @@ const SiteDescription = styled.div({
 const SideMenuWrapper = styled.div({
     display: "flex",
     flexDirection: "row",
-    margin: "auto 0 0 auto",
-    padding:"0 100px 5px 0"
+    margin: "auto auto 0 auto",
 })
 
 const MenuLink = styled.a({
-    marginLeft: 30,
+    margin: "0 30px",
     color:"#fff",
     textDecoration:"none",
     "&:hover":{
