@@ -19,7 +19,7 @@ tags: "Google,Adsense,Gatsby,SEO"
 
 まずこちらの[Google Adsense](https://www.google.co.jp/adsense/start/#?modal_active=none)のサイトにアクセスし、googleアカウントでログインします。
 
-![google adsenseサイト](https://paper-attachments.dropbox.com/s_5C3B367415BD6AAE42A0915D6F1F17044C5CA733B7FFBB0A5DC3D8B7A2A42B75_1587431742398_image.png)
+![google adsenseサイト](https://paper-attachments.dropbox.com/s_5C3B367415BD6AAE42A0915D6F1F17044C5CA733B7FFBB0A5DC3D8B7A2A42B75_1587437093283_ss+1.png)
 
 
 
