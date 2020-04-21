@@ -3,10 +3,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { IndexTestQuery } from "../../types/graphql-types";
 import Card from "../components/card";
-import Form from "../components/form";
 import styled from "@emotion/styled";
 import Label from "../components/label";
-import About from "../components/about";
 
 interface Props {
   data: IndexTestQuery
@@ -19,11 +17,7 @@ const Section = styled.div({
   marginBottom: 50,
 })
 
-const FlexRow = styled.div({
-  display:"flex",
-  flexDirection:"row",
-  flexWrap:"wrap",
-});
+
 
 const IndexPage: React.FC<Props> = ({ data }) => {
   return (
@@ -66,12 +60,6 @@ const IndexPage: React.FC<Props> = ({ data }) => {
           })
         }
       </Section>
-      <Label labelName="Contact Me" />
-      <FlexRow>
-        <About />
-        <Form />
-      </FlexRow>
-
     </Layout>
   )
 }
