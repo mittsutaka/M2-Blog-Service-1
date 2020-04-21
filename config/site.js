@@ -2,7 +2,7 @@ module.exports = {
     pathPrefix: '/',
     title: 'm2-Gaming', // タイトル
     titleAlt: 'My Wonderful Website', // JSONLDのためのタイトル
-    description: 'プログラミングに関するナレッジや趣味のゲームなど多岐にわたるプログラマの趣味ブログ',
+    description: 'プログラミングに関するナレッジや趣味のゲームなど多岐にわたるプログラマの趣味ブログ。C#,ASP.NET,React,Gatsby,Netlify,TypeScriptに関しての技術記事と大好きなゲームに関する記事を書いています。特にPUBG。',
     url: 'https://m2-gaming.com', // スラッシュなしのサイトURL
     siteUrl: 'https://m2-gaming.com/', // スラッシュありのサイトURL
     siteLanguage: 'ja', // HTMLの言語（ここでは日本語）
