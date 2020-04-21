@@ -31,14 +31,15 @@ tags: "Google,Adsense,Gatsby,SEO"
 保存して次へと押すと個人情報を入力する画面になるのでそちらは適宜入力をする。
 
 そのあとにAdsenseのコードをサイトに貼る必要があるので自分のサイトにAdsenseのコードを張りつけてデプロイする。
-私の場合はGatsby.jsで作っているので``gatsby-plugin-react-helmet``を使って貼り付けて完了をクリック。
+私の場合はGatsby.jsで作っているので``gatsby-plugin-google-adsense``を使ってgatsby-config.jsに自分のca-pub-************貼り付けて完了をクリック。
 
-```js:title=site.js
-<Helmet title={seo.title}>
-    ****
-    <script data-ad-client="ca-pub-**********" async src="*******"></script>
-    ****
-</Helmet>
+```js:title=gatsby-config.js
+{
+    resolve: `gatsby-plugin-google-adsense`,
+    options: {
+        publisherId: `ca-pub-***********`
+    },
+},
 ```
 
 ![サイトスクリプト貼りつけ](https://paper-attachments.dropbox.com/s_5C3B367415BD6AAE42A0915D6F1F17044C5CA733B7FFBB0A5DC3D8B7A2A42B75_1587432920764_image.png)

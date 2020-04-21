@@ -99,6 +99,12 @@ module.exports = {
                     },
                 ]
             }
-        }
+        },
+        {
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+                publisherId: `ca-pub-7472499184442554`
+            },
+        },
     ],
 }
