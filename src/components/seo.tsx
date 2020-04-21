@@ -130,6 +130,7 @@ const SEO = ({ title, desc, banner, pathname, article }: ISeoProps) => (
             <meta name="apple-mobile-web-app-title" content={shortName} />
             <meta name="application-name" content={shortName} />
             <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+            <script data-ad-client="ca-pub-7472499184442554" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />
