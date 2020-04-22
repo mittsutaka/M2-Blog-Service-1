@@ -2323,11 +2323,13 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
   slug?: Maybe<Scalars['String']>;
   rPath?: Maybe<Scalars['String']>;
+  name?: Maybe<Scalars['String']>;
 };
 
 export type SitePageContextFilterInput = {
   slug?: Maybe<StringQueryOperatorInput>;
   rPath?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -2431,6 +2433,7 @@ export type SitePageFieldsEnum =
   'isCreatedByStatefulCreatePages' |
   'context___slug' |
   'context___rPath' |
+  'context___name' |
   'pluginCreator___id' |
   'pluginCreator___parent___id' |
   'pluginCreator___parent___parent___id' |
@@ -3112,3 +3115,19 @@ export type BlogDataQuery = { markdownRemark?: Maybe<(
     Pick<MarkdownRemark, 'html'>
     & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'description' | 'category' | 'tags'>> }
   )>, file?: Maybe<Pick<File, 'publicURL'>> };
+
+export type CategoryDataQueryVariables = {
+  name: Scalars['String'];
+};
+
+
+export type CategoryDataQuery = { allMarkdownRemark: { edges: Array<{ node: (
+        Pick<MarkdownRemark, 'id'>
+        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'description' | 'category'>> }
+      ) }> }, logoFiles: { edges: Array<{ node: (
+        Pick<File, 'id' | 'relativePath'>
+        & { childImageSharp?: Maybe<{ fixed?: Maybe<Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'originalName'>> }> }
+      ) }> }, sitePage?: Maybe<(
+    Pick<SitePage, 'id'>
+    & { context?: Maybe<Pick<SitePageContext, 'name'>> }
+  )> };

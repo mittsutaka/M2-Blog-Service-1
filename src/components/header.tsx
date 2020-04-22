@@ -55,6 +55,7 @@ const MenuLink = styled.a({
 const SideMenu = () => {
     return (
         <SideMenuWrapper>
+            <MenuLink href="#category">Category</MenuLink>
             <MenuLink href="#contact">Contact</MenuLink>
             <MenuLink href="#about">About</MenuLink>
         </SideMenuWrapper>

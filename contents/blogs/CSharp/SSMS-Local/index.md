@@ -2,7 +2,7 @@
 title: "Microsoft SQL Server Managemant StudioでローカルDBに接続する"
 date: "2020-04-20T05:12:03.284Z"
 description: "ASP.NET MVCでシステム開発をしていて、普段はコードファーストでデータベースのアップデートを行っているが、プラグイン導入で直接SQL実行する必要があったのでその方法をまとめる"
-category: "C#"
+category: "CSharp"
 ---
 
 # Microsoft SQL Server Managemant StudioでローカルDBに接続する

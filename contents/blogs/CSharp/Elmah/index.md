@@ -2,7 +2,7 @@
 title: "ASP.NET MVCのエラーログ出力をELMAHで行う"
 date: "2020-04-20T06:12:03.284Z"
 description: "自社サービスはASP.NET MVCを用いて開発をしているが、規模が大きくなりつつあり、エラーログ出力をしていなかったのでELMAHで実装することとなった"
-category: "C#"
+category: "CSharp"
 ---
 
 # ASP.NET MVCのエラーログ出力をELMAHで行う

@@ -5,6 +5,7 @@ import { IndexTestQuery } from "../../types/graphql-types";
 import Card from "../components/card";
 import styled from "@emotion/styled";
 import Label from "../components/label";
+import { css } from "@emotion/core";
 
 interface Props {
   data: IndexTestQuery
@@ -17,9 +18,40 @@ const Section = styled.div({
   marginBottom: 50,
 })
 
+const CategorySectionStyle = css({
+  flexWrap:"wrap",
+  paddingTop:30
+})
 
+const CategoryCircle = styled.div({
+  borderRadius: "50%",
+  width: 150,
+  height: 150,
+  backgroundColor: "#333",
+  color: "#fff",
+  display:"flex",
+  textAlign:"center",
+  lineHeight:"150px",
+  margin:"0 20px",
+  a: {
+    fontSize: 22,
+    textDecoration: "none",
+    color:"#fff",
+    width:"100%",
+    height:"100%"
+  },
+  "&:hover":{
+    boxShadow:"0 0 5px #000"
+  }
+})
 
 const IndexPage: React.FC<Props> = ({ data }) => {
+  let categories: string[] = [];
+  data.allMarkdownRemark.edges.forEach((edge) => {
+    if (!categories.includes(edge.node.frontmatter.category)) {
+      categories.push(edge.node.frontmatter.category)
+    }
+  });
   return (
     <Layout>
       <Label labelName="New Posts" />
@@ -56,6 +88,20 @@ const IndexPage: React.FC<Props> = ({ data }) => {
                 fixed={fixedData}
                 date={edge.node.frontmatter.date}
               />
+            )
+          })
+        }
+      </Section>
+      <Label labelName="Categories" />
+      <Section id="category" css={CategorySectionStyle}>
+        {
+          categories.map((name, index) => {
+            return (
+              <CategoryCircle key={index}>
+                <Link to={`/Category/${name}`}>
+                  {name}
+                </Link>
+              </CategoryCircle>
             )
           })
         }

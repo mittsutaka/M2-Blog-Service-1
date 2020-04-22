@@ -2,7 +2,7 @@
 title: "ASP.NET MVC 404エラー画面実装"
 date: "2020-04-17T05:12:03.284Z"
 description: "ASP.NET MVCの404エラー時に404用の画面を設定したのでそれに関して備忘録としてまとめる"
-category: "C#"
+category: "CSharp"
 ---
 
 # ASP.NET MVC 404エラー画面実装

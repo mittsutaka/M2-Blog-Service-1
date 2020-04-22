@@ -2,7 +2,7 @@
 title: "【C#】ASP.NET MVCでGoogleの外部認証を使用する"
 date: "2020-04-22T10:12:03.284Z"
 description: "ASP.NET MVCでgoogle外部認証を実装する。自社システムにGoogleの外部認証を入れることとなったのでその手順を書いていく。ユーザーとしても複数のアカウントを保持するのは好ましくないのでGoogleアカウントでログインができたらユーザービリティが向上するはずである。"
-category: "C#"
+category: "CSharp"
 tags: "Google,API,C#,OAuth"
 ---
 
