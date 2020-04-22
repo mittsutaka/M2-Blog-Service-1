@@ -31,7 +31,8 @@ const contents = css({
     paddingLeft: 30
   },
   img: {
-    width: "100%"
+    width: "100%",
+    padding:"10px 10px 30px 10px"
   },
   "@media (max-width: 600px)": {
     P: {
