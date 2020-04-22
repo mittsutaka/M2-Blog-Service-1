@@ -3184,4 +3184,4 @@ export type BlogDataQueryVariables = {
 export type BlogDataQuery = { markdownRemark?: Maybe<(
     Pick<MarkdownRemark, 'html'>
     & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'description' | 'category' | 'tags'>> }
-  )> };
+  )>, file?: Maybe<Pick<File, 'publicURL'>> };

@@ -32,7 +32,7 @@ const contents = css({
   },
   img: {
     width: "100%",
-    padding:"10px 10px 30px 10px"
+    padding: "10px 10px 30px 10px"
   },
   "@media (max-width: 600px)": {
     P: {
@@ -65,7 +65,7 @@ const Date = styled.span({
 
 const Blog: React.FC<Props> = ({ data }) => {
   return (
-    <Layout title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} article={true} banner={`${data.markdownRemark.fields.slug}logo.png`}>
+    <Layout title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} article={true} banner={data.file.publicURL}>
       <div css={contents}>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
       </div>
@@ -91,6 +91,9 @@ export const query = graphql`
         category
         tags
       }
+    }
+    file(name: {eq: "logo"}, dir: {eq: "C:/Users/mitsutaka/Documents/Site/M2-Blog-Service-1/contents/blogs/CSharp/404NotFound"}) {
+      publicURL
     }
   }
 `
