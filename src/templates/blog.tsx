@@ -78,7 +78,7 @@ const Blog: React.FC<Props> = ({ data }) => {
 export default Blog;
 
 export const query = graphql`
-  query BlogData($slug: String!) {
+  query BlogData($slug: String!,$rPath:String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
@@ -92,7 +92,7 @@ export const query = graphql`
         tags
       }
     }
-    file(name: {eq: "logo"}, dir: {eq: "C:/Users/mitsutaka/Documents/Site/M2-Blog-Service-1/contents/blogs/CSharp/404NotFound"}) {
+    file(relativePath: {eq: $rPath}) {
       publicURL
     }
   }
