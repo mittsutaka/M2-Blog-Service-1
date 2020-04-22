@@ -12,13 +12,14 @@ interface ILayoutProps {
     children: React.ReactNode,
     title?: string,
     desc?: string,
-    article?: boolean
+    article?: boolean,
+    banner?: string
 }
 
-const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article }) => {
+const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article, banner }) => {
     return (
         <div>
-            <SEO title={title} desc={desc} article={article} />
+            <SEO title={title} desc={desc} article={article} banner={banner} />
             <Header />
             <Body>
                 {children}

@@ -65,7 +65,7 @@ const Date = styled.span({
 
 const Blog: React.FC<Props> = ({ data }) => {
   return (
-    <Layout title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} article={true} >
+    <Layout title={data.markdownRemark.frontmatter.title} desc={data.markdownRemark.frontmatter.description} article={true} banner={`${data.markdownRemark.fields.slug}logo.png`}>
       <div css={contents}>
         <Date>{data.markdownRemark.frontmatter.date}</Date>
       </div>
@@ -80,12 +80,16 @@ export default Blog;
 export const query = graphql`
   query BlogData($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       html
       frontmatter {
         title
         date(formatString: "YYYY.MM.DD")
         description
         category
+        tags
       }
     }
   }
