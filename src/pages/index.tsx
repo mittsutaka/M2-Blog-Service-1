@@ -19,8 +19,8 @@ const Section = styled.div({
 })
 
 const CategorySectionStyle = css({
-  flexWrap:"wrap",
-  paddingTop:30
+  flexWrap: "wrap",
+  paddingTop: 30
 })
 
 const CategoryCircle = styled.div({
@@ -29,19 +29,27 @@ const CategoryCircle = styled.div({
   height: 150,
   backgroundColor: "#333",
   color: "#fff",
-  display:"flex",
-  textAlign:"center",
-  lineHeight:"150px",
-  margin:"0 20px",
+  display: "flex",
+  textAlign: "center",
+  lineHeight: "150px",
+  margin: "10px 20px",
   a: {
     fontSize: 22,
     textDecoration: "none",
-    color:"#fff",
-    width:"100%",
-    height:"100%"
+    color: "#fff",
+    width: "100%",
+    height: "100%"
   },
-  "&:hover":{
-    boxShadow:"0 0 5px #000"
+  "&:hover": {
+    boxShadow: "0 0 5px #000"
+  },
+  "@media (max-width: 800px)": {
+    width: 75,
+    height: 75,
+    lineHeight: "75px",
+    a:{
+      fontSize:16
+    }
   }
 })
 
