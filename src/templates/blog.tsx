@@ -9,7 +9,7 @@ const contents = css({
   maxWidth: 800,
   margin: "0 auto",
   P: {
-    fontSize: 18,
+    fontSize: 16,
     lineHeight: 2,
   },
   h1: {
@@ -33,6 +33,17 @@ const contents = css({
   img: {
     width: "100%",
     padding: "10px 10px 30px 10px"
+  },
+  blockquote:{
+    borderLeft:"2px solid lightgray",
+    paddingLeft:10,
+    marginBottom:5,
+    p:{
+      lineHeight:1.5,
+      color:"darkgreen",
+      fontStyle:"italic",
+      fontSize:14
+    }
   },
   "@media (max-width: 600px)": {
     P: {
@@ -91,6 +102,7 @@ export const query = graphql`
         category
         tags
       }
+      tableOfContents
     }
     file(relativePath: {eq: $rPath}) {
       publicURL
