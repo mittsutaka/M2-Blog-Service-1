@@ -9,7 +9,7 @@ const contents = css({
   maxWidth: 800,
   margin: "0 auto",
   P: {
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 2,
   },
   h1: {
@@ -31,7 +31,7 @@ const contents = css({
     paddingLeft: 30
   },
   img: {
-    width: "100%",
+    maxWidth: "100%",
     padding: "10px 10px 30px 10px"
   },
   blockquote:{
