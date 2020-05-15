@@ -28,7 +28,7 @@ tags: "PUBG,Mobile,Galacy,スマホ"
 ソロの動画も面白いけど、ソロゲーミングっていうクルーメンバーと一緒に回っているときの方が私は好き。<br>
 みんなうますぎて尊敬。
 
-[youtubeへはこちらからGO!!](https://www.youtube.com/channel/UCrfZDNPdTjff8quLyZOnzxw)
+[Youtubeへはこちらから](https://www.youtube.com/channel/UCrfZDNPdTjff8quLyZOnzxw)
 
 
 ## 2. 実況者まがれつ2nd
