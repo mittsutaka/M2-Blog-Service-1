@@ -9,7 +9,7 @@ const contents = css({
   maxWidth: 800,
   margin: "0 auto",
   P: {
-    fontSize: 14,
+    fontSize: 16,
     lineHeight: 2,
   },
   h1: {
