@@ -55,6 +55,7 @@ const CategoryCircle = styled.div({
 
 const IndexPage: React.FC<Props> = ({ data }) => {
   let categories: string[] = [];
+  let categoryLabel = `Category (All：${data.allMarkdownRemark.totalCount})`;
   data.allMarkdownRemark.edges.forEach((edge) => {
     if (!categories.includes(edge.node.frontmatter.category)) {
       categories.push(edge.node.frontmatter.category)
@@ -86,7 +87,7 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <Section>
         {
           data.allMarkdownRemark.edges.map((edge, index) => {
-            if (index % 3 != 1) return;
+            if (index % 3 != 1 || index > 30) return;
             let file = data.logoFiles.edges.find(t => `/${t.node.relativePath}` == `${edge.node.fields.slug}logo.png`);
             let fixedData = file.node.childImageSharp.fixed;
             return (
@@ -102,7 +103,7 @@ const IndexPage: React.FC<Props> = ({ data }) => {
           })
         }
       </Section>
-      <Label labelName="Categories" />
+      <Label labelName={categoryLabel} />
       <Section id="category" css={CategorySectionStyle}>
         {
           categories.map((name, index) => {
@@ -125,9 +126,9 @@ export default IndexPage;
 export const query = graphql`
 query IndexTest{
   allMarkdownRemark(
-    limit:30
     sort: {fields: frontmatter___date, order: DESC}
     ) {
+    totalCount
     edges {
       node {
         id

@@ -3195,10 +3195,13 @@ export type NotFoundQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteM
 export type IndexTestQueryVariables = {};
 
 
-export type IndexTestQuery = { allMarkdownRemark: { edges: Array<{ node: (
+export type IndexTestQuery = { allMarkdownRemark: (
+    Pick<MarkdownRemarkConnection, 'totalCount'>
+    & { edges: Array<{ node: (
         Pick<MarkdownRemark, 'id'>
         & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'description' | 'category'>> }
-      ) }> }, logoFiles: { edges: Array<{ node: (
+      ) }> }
+  ), logoFiles: { edges: Array<{ node: (
         Pick<File, 'id' | 'relativePath'>
         & { childImageSharp?: Maybe<{ fixed?: Maybe<Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'originalName'>> }> }
       ) }> } };
