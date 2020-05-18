@@ -14,7 +14,12 @@ const Label = styled.label({
 
 const TextArea = styled.div({
     marginBottom: 30,
-    padding: "2px 20px 0 0px"
+    padding: "2px 20px 0 0px",
+    "@media (max-width: 600px)":{
+        p:{
+            fontSize:"14px"
+        }
+    }
 })
 
 const About = () => {

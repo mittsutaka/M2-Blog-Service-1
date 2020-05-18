@@ -10,7 +10,7 @@ const Wrapper = styled.footer({
     flexDirection: "row",
     flexWrap: "wrap",
     color:"#fff",
-    padding:"20px 50px"
+    padding:"20px 30px"
 })
 
 const Footer = () => {
