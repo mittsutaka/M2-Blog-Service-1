@@ -31,6 +31,7 @@ tags: "PC,周辺機器,Display"
 プログラミングは長時間椅子に座って画面を見ることが多く変な高さで仕事をしていると首や腰が痛くなってきます。<br>
 なので昇降することで自分の最適な高さにすることは極めて重要です。同じもので昇降できないが2000円程度安いモデルもありますが**絶対に**昇降付きをおすすめします。
 <div class="afi-btns">
+<a href="https://www.amazon.co.jp/gp/product/B07DLQ6X7J/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07DLQ6X7J&linkCode=as2&tag=mitsutaka07-22&linkId=cb5f557cd568d9963ef1576332d5ba73" class="amazon-btn" target="_blank">Amazonで商品を見る</a>
 <a href="https://rpx.a8.net/svt/ejp?a8mat=3BBBEF+ANF74Q+2HOM+BWGDT&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00t2ng4.2bo11105.g00t2ng4.2bo12536%2Fa20040284619_3BBBEF_ANF74Q_2HOM_BWGDT%3Fpc%3Dhttp%253A%252F%252Fitem.rakuten.co.jp%252Fhikaritv%252F2010056262%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fhikaritv%252Fi%252F10056069%252F" rel="nofollow" class="rakuten-btn" target="_blank">楽天市場で商品を見る</a>
 </div>
 
@@ -57,7 +58,8 @@ tags: "PC,周辺機器,Display"
 ![調整色々](https://paper-attachments.dropbox.com/s_85E456128F9BEC6BE84840499E4C09A448281B0014D5BAC7A2C0E805C8625A9C_1589342987964_monitor-s2319hs-responsive-pdp-02.webp)
 
 <div class="afi-btns">
-<a href="https://rpx.a8.net/svt/ejp?a8mat=3BBBEF+ANF74Q+2HOM+BWGDT&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00qqxh4.2bo115c6.g00qqxh4.2bo12e07%2Fa20040284619_3BBBEF_ANF74Q_2HOM_BWGDT%3Fpc%3Dhttp%253A%252F%252Fitem.rakuten.co.jp%252Fdell%252Fs2319hs%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fdell%252Fi%252F10004247%252F" rel="nofollow"class="rakuten-btn" target="_blank">楽天市場で商品を見る</a>
+<a href="https://www.amazon.co.jp/gp/product/B07M9X8XTM/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07M9X8XTM&linkCode=as2&tag=mitsutaka07-22&linkId=c9f9d561fb003e7054bc2164ca02ca56" class="amazon-btn" target="_blank">Amazonで商品を見る</a>
+<a href="https://hb.afl.rakuten.co.jp/ichiba/1bab743d.d1a22d6d.1bab743e.e6932915/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdell%2Fs2319hs%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjB9" class="rakuten-btn" target="_blank">楽天市場で商品を見る</a>
 </div>
 
 

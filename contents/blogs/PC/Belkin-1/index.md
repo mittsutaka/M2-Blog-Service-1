@@ -36,6 +36,7 @@ Type-Cの端子が一つついているだけでこれだとイヤホンつけ�
 イヤホン＋充電じゃなくてイヤホン＋パソコンとの同期用にも使えるみたい。使ったことないけど。さすがにオーディオ＋オーディオはＮＧの模様。そりゃそうだし、使えても聖徳大使じゃないんだから意味ない。
 
 <div class="afi-btns">
+<a href="https://www.amazon.co.jp/gp/product/B074WDWVX1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B074WDWVX1&linkCode=as2&tag=mitsutaka07-22&linkId=12d35221649fcbbbeb6e8b7c30fe0c9a" class="amazon-btn" target="_blank">Amazonで商品を見る</a>
 <a href="https://rpx.a8.net/svt/ejp?a8mat=3BBBEF+ANF74Q+2HOM+BW8O1&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa20040284619_3BBBEF_ANF74Q_2HOM_BW8O1%3Fpc%3Dhttps%253A%252F%252Fbiccamera.rakuten.co.jp%252Fitem%252F0745883734108%252F%26m%3Dhttps%253A%252F%252Fbiccamera.rakuten.co.jp%252Fitem%252F0745883734108%252F" rel="nofollow" class="rakuten-btn" target="_blank">楽天市場で商品を見る</a>
 </div>
 
@@ -52,6 +53,7 @@ Type-Cの端子が一つついているだけでこれだとイヤホンつけ�
 ![belkinアダプター](https://paper-attachments.dropbox.com/s_14655901F427F382544BF0C83479F46BE51D5FBBECE4A5ED9CFA74BD5F2FE4E2_1589441077359_image.png)
 
 <div class="afi-btns">
+<a href="https://www.amazon.co.jp/gp/product/B07VRZNRBY/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07VRZNRBY&linkCode=as2&tag=mitsutaka07-22&linkId=6fa84490204e9df11efcc53135b00c9e" class="amazon-btn" target="_blank">Amazonで商品を見る</a>
 <a href="https://rpx.a8.net/svt/ejp?a8mat=3BBBEF+ANF74Q+2HOM+BW8O1&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa20040284619_3BBBEF_ANF74Q_2HOM_BW8O1%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fakibamac%252F0745883776078%252F%26m%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fakibamac%252F0745883776078%252F" rel="nofollow" class="rakuten-btn" target="_blank">楽天市場で商品を見る</a>
 </div>
 
