@@ -6,9 +6,9 @@ module.exports = {
     url: 'https://m2-gaming.com', // スラッシュなしのサイトURL
     siteUrl: 'https://m2-gaming.com/', // スラッシュありのサイトURL
     siteLanguage: 'ja', // HTMLの言語（ここでは日本語）
-    logo: 'src/images/gatsby-icon.png',
-    banner: 'src/images/gatsby-icon.png',
-    favicon: 'src/images/gatsby-icon.png', // ファビコン
+    logo: 'src/images/site-logo.png',
+    banner: 'src/images/site-logo.png',
+    favicon: 'src/images/site-logo.png', // ファビコン
     shortName: 'm2Gaming', // サイトの略称、12文字以下
     author: 'mitsutaka', // schemaORGJSONLDの作成者
     themeColor: '#2E326A',
