@@ -1,7 +1,7 @@
 ---
 title: "Gatsby.js+TypeScript+Netlifyでブログサイトを作成する"
 date: "2020-04-24T17:12:03.284Z"
-description: "Gatsby.js+Typescript+Netlifyでサイト構築。本サイトもGatsby.jsとTypeScriptとNetlifyでサイト構築を行っているが便利すぎたのでそれの紹介をする。TypeScriptにしている記事があまりないように思ったこともあるのと次作る時の私の備忘録用でもある。<br>
+description: "Gatsby.js+Typescript+Netlifyでサイト構築。本サイトもGatsby.jsとTypeScriptとNetlifyでサイト構築を行っているが便利すぎたのでそれの紹介をする。TypeScriptにしている記事があまりないように思ったこともあるのと次作る時の私の備忘録用でもある。
 ここではサイト構築までの手順のみ紹介するので「Gatsbyとは」とか「Netlifyとは」といったことは言及しない。細かいところは適宜ググってほしい。"
 category: "Gatsby"
 tags: "Gatsby,React,TypeScript,Netlify,Blog"
@@ -11,7 +11,7 @@ tags: "Gatsby,React,TypeScript,Netlify,Blog"
 
 ## はじめに
 
-本サイトもGatsby.jsとTypeScriptとNetlifyでサイト構築を行っているが便利すぎたのでそれの紹介をする。TypeScriptにしている記事があまりないように思ったこともあるのと次作る時の私の備忘録用でもある。<br>
+本サイトもGatsby.jsとTypeScriptとNetlifyでサイト構築を行っているが便利すぎたのでそれの紹介をする。TypeScriptにしている記事があまりないように思ったこともあるのと次作る時の私の備忘録用でもある。
 ここではサイト構築までの手順のみ紹介するので「Gatsbyとは」とか「Netlifyとは」といったことは言及しない。細かいところは適宜ググってほしい。
 
 
@@ -51,7 +51,7 @@ gatsby develop
 
 ## Githubへプッシュ
 
-Nrtlifyではgithubを使うとmasterにpushすればそのままデプロイしてくれるため便利なのでその設定をしていく。<br>
+Nrtlifyではgithubを使うとmasterにpushすればそのままデプロイしてくれるため便利なのでその設定をしていく。
 新規リポジトリを作成して下記実行する。
 ```sh
 git remote add origin https://github.com/*********/gatsbytest.git

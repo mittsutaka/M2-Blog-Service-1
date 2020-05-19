@@ -11,6 +11,7 @@ const contents = css({
   P: {
     fontSize: 16,
     lineHeight: 2,
+    whiteSpace:"pre-wrap"
   },
   h1: {
     fontSize: 24,
