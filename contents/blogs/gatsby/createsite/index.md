@@ -98,6 +98,9 @@ GitHubをクリック
 
 ![公開完了](https://paper-attachments.dropbox.com/s_9A2ECDA747DCE33F4374A5FABC2E4566013340664573F329047E265397AA71FB_1587717213396_image.png)
 
+## ドメイン取得
+デプロイするだけならそれでもいいが、サイト運営等をしていくのであれば独自ドメインの取得が必須である。
+独自ドメインの取得はお名前.comで[こちらの記事](https://m2-gaming.com/blogs/blog/domain001/)をみていただきたい。
 
 
 ## まとめ
