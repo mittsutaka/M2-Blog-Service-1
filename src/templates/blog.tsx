@@ -34,6 +34,9 @@ const contents = css({
   ul: {
     paddingLeft: 30
   },
+  li:{
+    lineHeight:2
+  },
   img: {
     maxWidth: "100%",
     padding: "10px 10px 30px 10px"
