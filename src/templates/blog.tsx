@@ -65,6 +65,9 @@ const contents = css({
     },
     pre: {
       fontSize: 14
+    },
+    li:{
+      fontSize:14
     }
   }
 })
