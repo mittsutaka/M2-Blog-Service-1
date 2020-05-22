@@ -17,10 +17,13 @@ const contents = css({
     fontSize: 24,
   },
   h2: {
-    fontSize: 22,
+    fontSize: 18,
     borderBottom: "1.5px solid lightgray",
     marginBottom: 10,
-    marginTop: 50
+    marginTop: 50,
+    backgroundColor:"#e53935",
+    padding:"10px",
+    color:"floralwhite"
   },
   pre: {
     marginTop: 0

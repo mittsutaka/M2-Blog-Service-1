@@ -74,8 +74,6 @@ tags: "Blog,Keyboard,PC"
 ③テンキーレス or フルキーボードを選択する
 私はテンキーはあまり使わないしあると横に長くなるのでテンキーレスを選択しました。
 
-![テンキー選択](/static/img/pixel.gif)
-
 ![テンキーレス](https://paper-attachments.dropbox.com/s_FB1FB1F75BD30A1A2F916E3CD1630C034CA7898FACDF14C8388C12010989D425_1590100803472_image.png)
 
 
