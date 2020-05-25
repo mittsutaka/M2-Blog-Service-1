@@ -68,3 +68,7 @@ tags: "Google,Adsense,Gatsby,SEO"
 結果が出たらまた記事でご報告します。
 どうなるか期待せず待っていようかと思います。
 
+## 結果（追記）
+[結果はこちら](https://m2-gaming.com/blogs/google/adsense-1-result/)
+
+

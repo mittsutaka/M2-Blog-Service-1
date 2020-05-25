@@ -3176,6 +3176,17 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
+export type ImageQueryVariables = {};
+
+
+export type ImageQuery = { allFile: { edges: Array<{ node: (
+        Pick<File, 'id' | 'relativePath' | 'publicURL' | 'sourceInstanceName'>
+        & { childImageSharp?: Maybe<(
+          Pick<ImageSharp, 'id'>
+          & { fixed?: Maybe<Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'originalName'>> }
+        )> }
+      ) }> } };
+
 export type SeoQueryVariables = {};
 
 

@@ -23,7 +23,8 @@ const contents = css({
     marginTop: 50,
     backgroundColor:"#e53935",
     padding:"10px",
-    color:"floralwhite"
+    color:"floralwhite",
+    fontWeight:"normal"
   },
   pre: {
     marginTop: 0
