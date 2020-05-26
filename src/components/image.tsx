@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useStaticQuery, StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { ImageQuery } from "../../types/graphql-types";
 import Img from 'gatsby-image';
 
