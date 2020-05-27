@@ -5,9 +5,10 @@ description: "2020年現在のTwitterAPIの申請手順の紹介です。とり�
 category: "Programing"
 tags: "Programing,Twitter"
 ---
+
 # 【2020年】Twitter APIの申請手順
 
-![](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590540157939_coffee-3080833_1920.jpg)
+![TOP画像](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590540157939_coffee-3080833_1920.jpg)
 
 ## はじめに
 
@@ -18,6 +19,7 @@ Twitterをやっている人が多いと思いますが、公式のアプリで�
 
 ## 対象読者
 - とりあえずTwitterAPIの申請がしたい人
+- 一刻も早くTwitterAPIを使用したい人
 
 
 ## 事前準備
@@ -39,7 +41,8 @@ APIを使わせてもらうのにTwitterの許可（認証）が必要なので�
 ## アプリケーションの登録
 
 次に右上の”Create an app”をクリックします。
-言葉の通りTwitterAPIを使用するにはアプリケーションの登録が必要なので、登録をしていきます。といってもまだ無い場合が多いので仮のアプリケーション情報を入力していきます。
+アプリケーションを登録していくと思いきや。。。こんな表示が
+
 
 
 ![アカウント同意画面](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590499236039_image.png)
@@ -53,8 +56,10 @@ APIを使わせてもらうのにTwitterの許可（認証）が必要なので�
 > 
 > 開発者プラットフォームとしての私たちの最初の責任は、ユーザーに対するものです。Twitterでの会話の健全性をサポートする場所を提供することです。 プラットフォームの誤用を防止するために、開発者向けにいくつかの新しい要件を導入しました。
 
-・・・まあApplyでよいでしょう。Applyボタンしかないですし。
+Twitter APIを使用するには開発者アカウントの申請が必要なのでまずそれをしてくださいということです。
+のでApplyを押しましょう。Applyボタンしかないですし。
 
+ここからdeveloper Accountの申請を行ってきます。
 
 ## 使用目的を選択する
 
@@ -99,6 +104,8 @@ Exploring the APIを選択して、右下のNextをクリックします。
 
 > In English, please describe how you plan to use Twitter data and/or APIs. The more detailed the response, the easier it is to review and approve.
 
+<br>
+
 私の場合は、正直にこう書きました。
 勉強のためTwitterAPIを使用して何ができるかを知りたいです。また、Twitter APIとReactとTypeScriptを使用して簡単なアプリケーションを作成したいと思っています。最終的にはTwitterからユーザーがどのようなことに関心があるかを分析したいと思っています。
 ↓訳す
@@ -112,7 +119,6 @@ I want to know what I can do with Twitter API for study. I also want to create a
 
 <br>
 
-
 **③分析方法を説明してください**
 実際の英文はこう↓
 
@@ -125,7 +131,6 @@ Analyze what your users are most interested in right now by counting the hashtag
 
 <br>
 
-
 **④Tweetやリツイート、いいね、フォロー、DM機能を使いますか？**
 
 > Will your app use Tweet, Retweet, like, follow, or Direct Message functionality?
@@ -134,12 +139,10 @@ Analyze what your users are most interested in right now by counting the hashtag
 
 <br>
 
-
 **⑤Tweetを表示したりしますか？**
 Yesを選択しました。
 
 <br>
-
 
 **⑥Twitterの外部に表示する方法と場所を説明してください**
 
@@ -151,7 +154,6 @@ Yesを選択しました。
 In my post on my Output blog, I'll show you a Twitter API and a simple application that uses React and TypeScript. We plan to display Tweet on the top screen of the application.
 
 <br>
-
 
 **⑦Twitter情報を政府機関が利用できるようになりますか**
 当然Noです。
@@ -184,15 +186,101 @@ In my post on my Output blog, I'll show you a Twitter API and a simple applicati
 
 ![確認メール](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590502355464_image.png)
 
-## 申請完了
+## developer Accountの登録完了
 
-するとこんな画面に遷移しますのでこれで申請が完了です。
+するとこんな画面に遷移しますのでこれでdeveloper accountの登録が完了です。
 
-![](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590502393390_image.png)
+![登録完了画面](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590502393390_image.png)
+
+## アプリケーションの登録
+
+それでは無事にdeveloper accountが登録できたのでアプリケーションの登録をしていきます。
+言葉の通りTwitterAPIを使用するにはアプリケーションの登録が必要なので、登録をしていきます。といってもまだ無い場合が多いので仮のアプリケーション情報を入力していきます。
+
+<br>
+
+まず真ん中のCreate an appをクリックします。
+
+![Create an app](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590568809861_image.png)
+
+
+右上のCreate an appをクリックします。
+
+![Create an app2](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590568960415_image.png)
+
+
+するとアプリケーションの情報を入力する画面になるので入力していきます。
+必須以外は入力しなくてもよいです。
+
+
+![アプリケーション入力画面①](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590570120736_image.png)
+
+
+**①アプリケーションの名前は？**
+これはユニークな名前でないといけないので注意してください
+私の場合は
+SampleApp12345678
+としました。
+
+<br>
+
+**②アプリケーションの概要は？**
+私の場合は
+twitterの情報を期間で検索をかけ、頻出単語のランキングやハッシュタグのランキングを表示します。
+訳す↓
+Search twitter information by period and display the ranking of frequently used words and the ranking of hashtags.
+
+<br>
+
+**③Website URLは？**
+私の場合はこのサイトのURLを入力しました。
+なんでもいいです。試してませんがおそらく適当な文字列でも。
+
+https://m2-gaming.com/
+
+
+
+![アプリケーション入力画面②](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590569777113_image.png)
+
+
+**④アプリの使い方は？**
+私の場合は
+期間を入力して検索をクリックすると単語の頻出数やハッシュタグの頻出数でランキング表示されます。また、通常のtweetも表示されます。リアルタイムではなく、更新ボタンを押して更新させます。
+訳す↓
+If you enter a period and click Search, it will be ranked according to the number of words and the number of hashtags. You will also see a regular tweet. Press the update button to update it, not in real time.
+
+<br>
+
+ここまで入力したらCreateをクリックします。
+するとこんな画面が表示されるのでよーく読んで、Createをクリックします。
+ちなみになんて書いてあるかというと。
+
+- ユーザーに関する機密データの取り扱いは注意してください
+- 監視目的の使用は禁止です
+- 自動化する場合はガイドラインをよく読んでください
+
+悪用しないことを胸に誓ってクリックしましょう
+
+
+![注意画面](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590569760711_image.png)
+
+## 登録完了
+
+このような画面になれば登録完了です。
+
+![登録完了](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590570162748_image.png)
+
+
+APIkeyは上部のタブのKeys and tokensに切り替えると確認できます。
+これで申請から登録まで完了です。
+このAPIkeyを使ってアプリやサイトを作成しましょう。
+
+![API key](https://paper-attachments.dropbox.com/s_CA8ACB90B215E66FFE95552D4E454090C8662E67392E6745081F343C1B3FDF3E_1590570247989_image.png)
 
 ## まとめ
 
-無事に申請が完了したかと思います。
+以上でTwitter APIが使用できるようになりました。
 個人的にAPIを使用するのにこれだけめんどくさいのは初めてかもしれないです。Twitter社のポリシーが伺えるところでありますが、悪用されているケースもあるので仕方がないのかなと思います。
 どうやってこのAPIを使用していくかは申請時にも書きましたがReactとTypeScriptを使用して簡単なアプリケーションを作成するので別の記事で紹介します。
+
 
