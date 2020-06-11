@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Wrapper = styled.header({
     backgroundColor: "#2E326A",
-    padding: 5,
+    padding: 20,
     color: "#FFFFFF",
     height: "auto",
     display: "flex",

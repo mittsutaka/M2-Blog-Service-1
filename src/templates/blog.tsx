@@ -11,18 +11,19 @@ const contents = css({
   P: {
     fontSize: 16,
     lineHeight: 2,
-    whiteSpace:"pre-wrap"
+    whiteSpace:"pre-wrap",
+    padding:"0 15px",
   },
   h1: {
     fontSize: 24,
   },
   h2: {
-    fontSize: 18,
+    fontSize: 20,
     borderBottom: "1.5px solid lightgray",
-    marginBottom: 10,
+    marginBottom: 20,
     marginTop: 50,
     backgroundColor:"#e53935",
-    padding:"10px",
+    padding:"15px",
     color:"floralwhite",
     fontWeight:"normal"
   },
