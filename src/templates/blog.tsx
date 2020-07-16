@@ -6,7 +6,7 @@ import { BlogDataQuery } from "../../types/graphql-types";
 import Layout from "../components/layout";
 
 const contents = css({
-  maxWidth: 800,
+  maxWidth: 1000,
   margin: "0 auto",
   P: {
     fontSize: 16,
