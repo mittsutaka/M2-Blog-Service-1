@@ -19,13 +19,13 @@ const contents = css({
   },
   h2: {
     fontSize: 20,
-    borderBottom: "1.5px solid lightgray",
     marginBottom: 20,
     marginTop: 50,
-    backgroundColor:"#e53935",
+    backgroundColor:"#5C6B80",
     padding:"15px",
     color:"floralwhite",
-    fontWeight:"normal"
+    fontWeight:"normal",
+    borderRadius:"8px"
   },
   pre: {
     marginTop: 0
