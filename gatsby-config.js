@@ -11,12 +11,12 @@ module.exports = {
             head: true,
         }
     },
-    {
-        resolve: `gatsby-plugin-google-adsense`,
-        options: {
-            publishId: "ca-pub-7472499184442554",
-        }
-    },
+    // {
+    //     resolve: `gatsby-plugin-google-adsense`,
+    //     options: {
+    //         publishId: "ca-pub-7472499184442554",
+    //     }
+    // },
         `gatsby-plugin-react-helmet`,
     {
         resolve: `gatsby-source-filesystem`,
@@ -115,5 +115,12 @@ module.exports = {
             }]
         }
     },
+    {
+        resolve: `@isamrish/gatsby-plugin-google-adsense`,
+          options: {
+            googleAdClientId: "ca-pub-7472499184442554",
+            head: false // Optional
+          }
+        },
     ],
 }
