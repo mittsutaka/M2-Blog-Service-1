@@ -7,7 +7,7 @@ const AdsenseTop = () => {
             <Adsense
                 client='ca-pub-7472499184442554'
                 slot='4746118544'
-                style= "display: 'block',text-align:'center'"
+                style={{ display: 'block', textAlign: 'center' }}
                 format='flued'
                 layout="in-article"
             />
