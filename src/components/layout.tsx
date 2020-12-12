@@ -24,8 +24,8 @@ const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article, banner
             <Header />
             <Body>
                 {children}
+                <GoogleAdsense />
             </Body>
-            <GoogleAdsense />
             <Footer />
         </div>
     )
