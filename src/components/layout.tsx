@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from './footer';
 import styled from "@emotion/styled";
 import SEO from "./seo";
+import GoogleAdsense from '../components/adsense';
 
 const Body = styled.main({
     margin: "4% 5%",
@@ -24,6 +25,7 @@ const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article, banner
             <Body>
                 {children}
             </Body>
+            <GoogleAdsense />
             <Footer />
         </div>
     )
