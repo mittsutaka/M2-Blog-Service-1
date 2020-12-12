@@ -24,7 +24,6 @@ const Layout: React.FC<ILayoutProps> = ({ children, title, desc, article, banner
             <SEO title={title} desc={desc} article={article} banner={banner} />
             <Header />
             <Body>
-                <AdsenseTop />
                 {children}
                 <AdsenseBottom />
             </Body>
