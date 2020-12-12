@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Adsense } from "@ctrl/react-adsense";
-import styled from "@emotion/styled";
 
 const GoogleAdsense = () => {
     return (
