@@ -2485,7 +2485,6 @@ export type SitePageFieldsEnum =
   'pluginCreator___pluginOptions___plugins___pluginFilepath' |
   'pluginCreator___pluginOptions___trackingId' |
   'pluginCreator___pluginOptions___head' |
-  'pluginCreator___pluginOptions___publishId' |
   'pluginCreator___pluginOptions___name' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___short_name' |
@@ -2511,6 +2510,7 @@ export type SitePageFieldsEnum =
   'pluginCreator___pluginOptions___header' |
   'pluginCreator___pluginOptions___reuseExistingHeader' |
   'pluginCreator___pluginOptions___include' |
+  'pluginCreator___pluginOptions___googleAdClientId' |
   'pluginCreator___pluginOptions___pathCheck' |
   'pluginCreator___nodeAPIs' |
   'pluginCreator___browserAPIs' |
@@ -2718,7 +2718,6 @@ export type SitePluginFieldsEnum =
   'pluginOptions___plugins___pluginFilepath' |
   'pluginOptions___trackingId' |
   'pluginOptions___head' |
-  'pluginOptions___publishId' |
   'pluginOptions___name' |
   'pluginOptions___path' |
   'pluginOptions___short_name' |
@@ -2744,6 +2743,7 @@ export type SitePluginFieldsEnum =
   'pluginOptions___header' |
   'pluginOptions___reuseExistingHeader' |
   'pluginOptions___include' |
+  'pluginOptions___googleAdClientId' |
   'pluginOptions___pathCheck' |
   'nodeAPIs' |
   'browserAPIs' |
@@ -2860,7 +2860,6 @@ export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   trackingId?: Maybe<Scalars['String']>;
   head?: Maybe<Scalars['Boolean']>;
-  publishId?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   short_name?: Maybe<Scalars['String']>;
@@ -2881,6 +2880,7 @@ export type SitePluginPluginOptions = {
   header?: Maybe<Scalars['String']>;
   reuseExistingHeader?: Maybe<Scalars['Boolean']>;
   include?: Maybe<Array<Maybe<Scalars['String']>>>;
+  googleAdClientId?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
@@ -2898,7 +2898,6 @@ export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   trackingId?: Maybe<StringQueryOperatorInput>;
   head?: Maybe<BooleanQueryOperatorInput>;
-  publishId?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   short_name?: Maybe<StringQueryOperatorInput>;
@@ -2919,6 +2918,7 @@ export type SitePluginPluginOptionsFilterInput = {
   header?: Maybe<StringQueryOperatorInput>;
   reuseExistingHeader?: Maybe<BooleanQueryOperatorInput>;
   include?: Maybe<StringQueryOperatorInput>;
+  googleAdClientId?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 

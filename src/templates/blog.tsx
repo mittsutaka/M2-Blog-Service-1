@@ -20,7 +20,7 @@ const contents = css({
   h2: {
     fontSize: 20,
     marginBottom: 20,
-    marginTop: 50,
+    marginTop: "5%",
     backgroundColor:"#5C6B80",
     padding:"15px",
     color:"floralwhite",
@@ -41,7 +41,7 @@ const contents = css({
   },
   img: {
     maxWidth: "100%",
-    padding: "10px 10px 30px 10px"
+    padding: "2% 0"
   },
   blockquote:{
     borderLeft:"2px solid lightgray",
@@ -66,7 +66,6 @@ const contents = css({
       fontSize: 16,
       borderBottom: "1px solid lightgray",
       marginBottom: 10,
-      marginTop: 50
     },
     pre: {
       fontSize: 14
