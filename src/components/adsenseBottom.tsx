@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Adsense } from "@ctrl/react-adsense";
 
-const GoogleAdsense = () => {
+const AdsenseBottom = () => {
     return (
         <div>
             <Adsense
@@ -15,4 +15,4 @@ const GoogleAdsense = () => {
     )
 }
 
-export default GoogleAdsense;
+export default AdsenseBottom;
