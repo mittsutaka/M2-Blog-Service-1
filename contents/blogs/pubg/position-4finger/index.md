@@ -46,6 +46,12 @@ tags: "PUBG,Mobile,Galacy,スマホ"
 
 接近戦とかでジャンプ撃ちがしたい場合、これならエイムや移動をしながらジャンプ撃ちが可能に！！上級者の人からもジャンプ撃ちうまいよなーと褒められるほどに。ショットガンとかも持つようになりました。ダブバレジャンプ撃ちでキルすると相当気持ちいいです。
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7472499184442554"
+     data-ad-slot="4746118544"></ins>
 
 ## こだわりポイント③レレレしゃがみ撃ち最強
 ![レレレしゃがみ撃ち](https://paper-attachments.dropbox.com/s_3CB7BC154F836C064B571052768F7260D1082B7481843952815A69F8BFF1322A_1589178583223_image.png)
